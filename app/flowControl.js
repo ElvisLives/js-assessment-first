@@ -11,6 +11,24 @@ define(function() {
       //
       // otherwise the function should return the number, or false if no number
       // was provided
+
+      if(isNaN(num) === true){
+        return false;
+      }
+      
+      if (num % 3 === 0 && num % 5 === 0) {
+        return 'fizzbuzz'
+      };
+
+      if (num % 3 === 0) {
+        return 'fizz'
+      };
+
+      if (num % 5 === 0) {
+        return 'buzz'
+      };
+
+      return num;
     }
   };
 });
